@@ -237,7 +237,6 @@ view = document.getElementById('centerview');
 pesquisa = document.getElementById('pesquisa');
 
 incio = document.getElementById('inicio');
-cadastro = document.getElementById('cadastro');
 produtos = document.getElementById('produtos');
 vendas = document.getElementById('vendas');
 recebimentos = document.getElementById('recebimentos');
@@ -526,7 +525,6 @@ btnpesquisa.addEventListener('click', function() {
 
 categorias = [
 	inicio,
-	cadastro,
 	produtos,
 	vendas,
 	recebimentos,
@@ -536,7 +534,6 @@ categorias = [
 
 function resetar() {
 	inicio.className = 'nav-group-item';
-	cadastro.className = 'nav-group-item';
 	produtos.className = 'nav-group-item';
 	vendas.className = 'nav-group-item';
 	recebimentos.className = 'nav-group-item';
@@ -548,12 +545,6 @@ inicio.addEventListener('click', function() {
 	view.src = 'clientes/lista-clientes.html';
 	resetar();
 	incio.className = 'nav-group-item active';
-});
-
-cadastro.addEventListener('click', function() {
-	view.src = 'cadastro.html';
-	resetar();
-	cadastro.className = 'nav-group-item active';
 });
 
 vendas.addEventListener('click', function() {
