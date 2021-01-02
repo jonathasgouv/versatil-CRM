@@ -256,7 +256,7 @@ btncaixa = document.getElementById('caixa');
 btnlogout = document.getElementById('logout');
 
 btncaixa.addEventListener('click', function() {
-	janela('caixa.html', 500, 150);
+	janela('src/caixa/caixa.html', 500, 150);
 });
 
 str = document.location.href;
@@ -624,7 +624,7 @@ function mail() {
 
 		//To display the final no. of days (result)
 		if (Difference_In_Days < 90) {
-			//callNotification(obj)
+			//callNotification(obj);
 			//mailer(obj, Difference_In_Days.toFixed(0))
 		}
 	}
