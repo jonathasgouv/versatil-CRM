@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Controle de vendas</title>
+    <meta charset="utf-8"/>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../../css/photon.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+  </head>
+
+  <body>
+    <div class="window">
+          <div class="pane">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                      <th id="nomelabel">Nome</th>
+                      <th id="validadelabel">Validade</th>
+                      <th id="telefonelabel">Telefone</th>
+                      <th id="cpflabel">CPF</th>
+                      <th id="cidadelabel">Cidade</th>
+                      <th id="bairrolabel">Bairro</th>
+                      <th id="rualabel">Rua</th>
+                      <th id="nlabel">Nº</th>
+                      <th id="obslabel">Observação</th>
+                  </tr>
+                </thead>
+                <tbody id="form">
+                  <tr tabindex="0" id="linha" v-for="cliente in clientes" v-on:dblclick="editar(cliente)" v-on:click="editarr(cliente)">
+                    <td id="nome">{{cliente.nome}}</td>
+                    <td id="validade">{{cliente.validade}}</td>
+                    <td id="telefone">{{cliente.telefone}}</td>
+                    <td id="cpf">{{cliente.cpf}}</td>
+                    <td id="cidade">{{cliente.cidade}}</td>
+                    <td id="bairro">{{cliente.bairro}}</td>
+                    <td id="rua">{{cliente.rua}}</td>
+                    <td id="numero">{{cliente.numero}}</td>
+                    <td id="obs">{{cliente.obs}}</td>
+                  <!--</tr>
+                   <tr tabindex="0" id="linha" v-for="cliente in clientes" v-on:dblclick="editar(cliente)">
+                    <td colspan="9" id="dependentes">{{cliente.dependentes}}</td>
+                  </tr>  -->
+                </tbody>
+              </table>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="js/listaclientes.js"></script>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Controle de vendas</title>
+    <meta charset="utf-8"/>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../../css/photon.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+  </head>
+
+  <body>
+    <div class="window">
+          <div class="pane">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                      <th id="nomelabel">Nome</th>
+                      <th id="pricelabel">Preço</th>
+                      <th id="descriptionlabel">Descrição</th>
+                  </tr>
+                </thead>
+                <tbody id="form">
+                  <tr tabindex="0" id="linha" v-for="produto in produtos" v-on:dblclick="editar(produto)" v-on:click="editarr(produto)">
+                    <td id="nome">{{produto.nome}}</td>
+                    <td id="validade">R$ {{produto.price}}</td>
+                    <td id="telefone">{{produto.description}}</td>
+                  <!--</tr>
+                   <tr tabindex="0" id="linha" v-for="cliente in clientes" v-on:dblclick="editar(cliente)">
+                    <td colspan="9" id="dependentes">{{cliente.dependentes}}</td>
+                  </tr>  -->
+                </tbody>
+              </table>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+  </body>
+  <script src="../js/vue.js"></script>
+  <script src="js/listaprodutos.js"></script>
+</html>

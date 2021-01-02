@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif !important;
+    margin: 0;
+    background-color: rgb(255, 255, 255) !important;
+}
+
+
+#bloco1 {
+    text-align: center;
+}
+
+h1 {
+    font-weight: bolder !important;
+    margin-bottom: -0.5em !important;
+    text-transform: uppercase;
+    color: rgb(150, 165, 250);
+}
+
+p {
+    font-weight: bold !important;
+    color: rgb(186, 187, 192);
+    font-size: 1.3em;
+}
+
+.form-control {
+    border-radius: 1em !important;
+    border: 0.2em solid rgb(115, 135, 250) !important;
+}
+
+input[type=text] {
+    font-weight: bolder;
+    color: rgb(47, 127, 173);
+}
+
+label {
+    font-size: 1.5em !important;
+    font-weight: bolder;
+    color: rgb(186, 187, 192);
+}
+
+#dependentes {
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(47, 127, 173);
+}

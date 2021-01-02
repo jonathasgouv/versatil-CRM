@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Controle de vendas</title>
+    <meta charset="utf-8"/>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../../css/photon.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+  </head>
+
+  <body>
+    <div class="window">
+          <div class="pane">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                      <th id="nomelabel">Nome</th>
+                      <th id="pricelabel">Preço</th>
+                      <th id="datelabel">Data</th>
+                      <th id="descriptionlabel">Descrição</th>
+                  </tr>
+                </thead>
+                <tbody id="form">
+                  <tr tabindex="0" id="linha" v-for="recebimento in recebimentos" v-on:dblclick="editar(recebimento)" v-on:click="editarr(recebimento)">
+                    <td id="nome">{{recebimento.nome}}</td>
+                    <td id="validade">R$ {{recebimento.price}}</td>
+                    <td id="validade">{{recebimento.datereceivement}}</td>
+                    <td id="telefone">{{recebimento.description}}</td>
+                  <!--</tr>
+                   <tr tabindex="0" id="linha" v-for="cliente in clientes" v-on:dblclick="editar(cliente)">
+                    <td colspan="9" id="dependentes">{{cliente.dependentes}}</td>
+                  </tr>  -->
+                </tbody>
+              </table>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+  </body>
+  <script src="../js/vue.js"></script>
+  <script src="js/listarecebimentos.js"></script>
+</html>

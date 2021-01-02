@@ -1,0 +1,44 @@
+#yearselector {
+	width: 15%;
+	align-content: center;
+	justify-content: center;
+	justify-items: center;
+	text-justify: center;
+	padding: 0.5em;
+	margin: 0.5em;
+}
+
+#seletores {
+	display: flex;
+	columns: row;
+}
+
+#classselector {
+	width: 80%;
+	align-content: center;
+	justify-content: center;
+	justify-items: center;
+	text-justify: center;
+	padding: 0.5em;
+	margin: 0.5em;
+}
+
+#classselector option {
+	text-align: center;
+}
+
+#checkboxs {
+	display: flex;
+}
+
+#anteriores,
+#per,
+#anteriores p,
+#per p {
+	margin-left: -1.2em;
+}
+
+#showornot,
+#per {
+	visibility: hidden;
+}

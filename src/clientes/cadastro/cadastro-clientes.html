@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+  <head>
+    <title>Cadastro de Clientes</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../../../css/photon.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Electron Javascript -->
+  </head>
+
+  <body>
+    <div class="window">
+      <div class="window-content">
+        <div class="pane-group">
+          </div>
+          <div class="pane">
+            <form action="" class="pane-body">
+              <div id="cadastro-clientes" class="form-group">
+                <div id="part1" class="form-group">
+                <input type="text" class="form-control" id="nome" placeholder="Nome">
+                <select id="sexo" class="form-control">
+                  <option>Masculino</option>
+                  <option>Feminino</option>
+                </select>
+                </div>
+                <div id="part2">
+                <input type="text" class="form-control" id="cpf" placeholder="CPF">
+                <input type="text" class="form-control" id="telefone" placeholder="Telefone">
+                <input id="validade" class="form-control" type="text" placeholder="Validade">
+                </div>
+                <div id="part3">
+                  <input type="text" class="form-control" id="cep" value="" size="10" maxlength="9" onblur="pesquisacep(this.value);" placeholder="CEP">
+                  <input id="cidade" class="form-control" type="text" placeholder="Cidade">
+                  <input id="uf" class="form-control" type="text" placeholder="UF">
+                </div>
+                <div id="part4">
+                  <input type="text" class="form-control" id="bairro" placeholder="Bairro">
+                  <input id="rua" class="form-control" type="text" placeholder="Rua">
+                  <input id="numero" class="form-control" type="text" placeholder="Nº">
+                </div>
+                <input id="obs" class="form-control" type="text" placeholder="Observação">
+                <div class="form-group">
+                  <label>Dependentes</label>
+                  <textarea id="dependentes" class="form-control" rows="3"></textarea>
+                </div>
+              </div>
+              <button type="button" id="salvar" class="btn btn-positive">Salvar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  <script src="js/index.js"></script>
+  </body>
+</html>

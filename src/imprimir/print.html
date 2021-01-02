@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=210mm, height=297mm, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/print.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/photon.css">
+</head>
+<body>
+    <header>
+        <div id="bloco1">
+        <h1 id="nome"></h1>
+        <p id="subtitulo"></p>
+        </div>
+    <form action="" class="pane-body">
+        <div id="cadastro-clientes" class="form-group">
+          <div id="part3">
+            <input type="text" class="form-control" id="cep" size="10" maxlength="9" placeholder="CEP" value="" readonly>
+            <input id="cidade" class="form-control" type="text" placeholder="Cidade" value="" readonly>
+            <input id="uf" class="form-control" type="text" placeholder="UF" maxlength="2" value="" readonly>
+          </div>
+          <div id="part4">
+            <input type="text" class="form-control" id="bairro" placeholder="Bairro" value="" readonly>
+            <input id="rua" class="form-control" type="text" placeholder="Rua" value="" readonly>
+            <input id="numero" class="form-control" type="text" placeholder="Nº" maxlength="6" value="" readonly>
+          </div>
+          <input id="obs" class="form-control" type="text" placeholder="Observação" value="" readonly>
+          <div class="form-group">
+            <label>Dependentes</label>
+            <textarea id="dependentes" class="form-control" rows="5" value="" readonly></textarea>
+          </div>
+        </div>
+      </form>
+</body>
+<script src="js/print.js"></script>
+</html>

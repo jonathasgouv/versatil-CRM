@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html ng-app>
+  <head>
+    <title>Cadastro de Produtos</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../../../css/photon.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Electron Javascript -->
+  </head>
+
+  <body>
+    <div class="window">
+      <div class="window-content">
+        <div class="pane-group">
+          </div>
+          <div class="pane">
+            <form action="" class="pane-body">
+              <div id="cadastro-clientes" class="form-group">
+                <div id="part1" class="form-group">
+                <input id="produto" list="produtos" name="myBrowser" class="form-control" placeholder='Produto'>
+                <datalist id="produtos">
+                  </datalist>
+                </input>
+                <input type="text" class="form-control" id="quant" placeholder="Quantidade">
+                </div>
+                <input id="cliente" list="clientes" name="myBrowser" class="form-control" placeholder='Cliente'>
+                    <datalist id="clientes">
+                      </datalist>
+                    </input>
+              <button type="button" id="salvar" class="btn btn-positive">Salvar</button>
+            </form>
+        </div>
+      </div>
+    </div>
+    </div>
+  <script src="js/vendas.js"></script>
+  </body>
+</html>

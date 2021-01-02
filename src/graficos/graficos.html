@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/photon.css">
+    <link rel="stylesheet" href="css/graficos.css">
+</head>
+<body>
+    <div id="seletores">
+        <select class="form-control" id="yearselector" onchange="graph()">
+            <option value="Anual">Anual</option>
+        </select>
+        <select class="form-control" id="classselector" onchange="graphtype()">
+            <option value="clientes">Clientes</option>
+            <option value="recebimentos">Recebimentos</option>
+            <option value="pagamentos">Pagamentos</option>
+            <option value="rvsp">Recebimentos x Pagamentos</option>
+        </select>
+    </div>
+    <div id="checkboxs">
+        <div class="checkbox">
+            <label>
+              <input id="anteriores" type="checkbox" onchange="graph()">Mostrar anteriores ao ano atual
+            </label>
+          </div>
+          <div id="showornot" class="checkbox">
+            <label>
+              <input id="per" type="checkbox" onchange="graph()"><a id="textsorn">Mostrar pagos<a/>
+            </label>
+          </div>
+    </div>
+    <div id="chart">
+    <canvas id="myChart"></canvas>
+    </div>
+</body>
+<script src="js/chart.js"></script>
+<script src="js/graficos.js"></script>
+</html>
