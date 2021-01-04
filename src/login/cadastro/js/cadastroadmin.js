@@ -1,7 +1,32 @@
+const electron = require('electron');
+const remote = electron.remote;
+const BrowserWindow = electron.remote.BrowserWindow;
 const loki = require('lokijs');
 const fs = require('fs');
 
 loginbtn = document.getElementById('loginbtn');
+btnmaximize = document.getElementById('maximize');
+btnclose = document.getElementById('close');
+btnminimize = document.getElementById('minimize');
+
+btnmaximize.addEventListener('click', function() {
+	var window = remote.getCurrentWindow();
+	if (window.isMaximized() == true) {
+		window.unmaximize();
+	} else {
+		window.maximize();
+	}
+});
+
+btnclose.addEventListener('click', function() {
+	var window = remote.getCurrentWindow();
+	window.close();
+});
+
+btnminimize.addEventListener('click', function() {
+	var window = remote.getCurrentWindow();
+	window.minimize();
+});
 
 function ValidateEmail(inputText) {
 	var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
