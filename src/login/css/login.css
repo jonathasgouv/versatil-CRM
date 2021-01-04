@@ -4,10 +4,69 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	margin: 0;
 	overflow: hidden; /* Hide scrollbars */
+	background-color: rgb(31, 111, 216);
 }
 
-* {
-	background-color: rgb(31, 111, 216);
+#controle {
+	float: right;
+	text-align: center;
+	padding-right: 1em;
+	isolation: isolate;
+	padding-bottom: 0.5em;
+}
+
+#logotipo {
+	filter: invert(40%) sepia(0%) saturate(9%) hue-rotate(218deg) brightness(102%) contrast(100%);
+	width: 150px;
+	padding-bottom: -10em;
+	margin-top: 0.2em;
+	margin-bottom: -1em;
+}
+
+#minimize,
+#maximize,
+#close {
+	height: 15px;
+	width: 15px;
+	margin-left: 0.5em;
+	border: 0.1em solid rgba(0, 0, 0, 0.3);
+	border-radius: 40%;
+}
+
+#minimize:hover {
+	background-color: #f8b238;
+}
+
+#close:hover {
+	background-color: #fd3939;
+}
+
+#maximize:hover {
+	background-color: #01ac4b;
+}
+
+#close {
+	background-color: #ff5c5c;
+}
+
+#minimize {
+	background-color: #ffbd4c;
+}
+
+#maximize {
+	background-color: #00ca56;
+}
+
+#close:active {
+	background-color: #cc1e1e;
+}
+
+#minimize:active {
+	background-color: #cc8b1b;
+}
+
+#maximize:active {
+	background-color: #0b9145;
 }
 
 #loginbox {

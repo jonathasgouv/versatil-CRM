@@ -1,5 +1,6 @@
 const electron = require('electron');
 const remote = electron.remote;
+const BrowserWindow = electron.remote.BrowserWindow;
 var fs = require('fs');
 var loki = require('lokijs');
 var db = new loki('users.vs');
@@ -9,6 +10,28 @@ db.loadJSON(rawdata);
 var users = db.getCollection('users');
 
 login = document.getElementById('loginbtn');
+btnmaximize = document.getElementById('maximize');
+btnclose = document.getElementById('close');
+btnminimize = document.getElementById('minimize');
+
+btnmaximize.addEventListener('click', function() {
+	var window = remote.getCurrentWindow();
+	if (window.isMaximized() == true) {
+		window.unmaximize();
+	} else {
+		window.maximize();
+	}
+});
+
+btnclose.addEventListener('click', function() {
+	var window = remote.getCurrentWindow();
+	window.close();
+});
+
+btnminimize.addEventListener('click', function() {
+	var window = remote.getCurrentWindow();
+	window.minimize();
+});
 
 login.addEventListener('click', function() {
 	if (users.findOne({ username: document.getElementById('username').value }) != null) {
