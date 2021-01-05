@@ -83,7 +83,7 @@ ready(function() {
 				users.insert(data);
 				db.saveDatabase();
 				alert('Salvo com sucesso');
-				window.location = 'login.html';
+				window.location = '../login.html';
 			} else {
 				alert('As senhas não combinam!');
 			}

@@ -1,5 +1,5 @@
 # VersatilCRM - VCRM
-*** Version 1.0.0 ***
+** Version 1.0.0 **
 
 VersatilCRM is a complete multi-user CRM that can be used to manage customers, sales, payments and receipts with different databases for each user. VersatilCRM uses all the data generated to create graphs that show a historical and future overview of the company's situation.
 
@@ -21,6 +21,35 @@ $ npm install
 $ npm start
 ```
 And that's it, your CRM is running.
+
+## Overview
+### User-based system
+VersatilCRM supports different users at the same local machine, with tottaly separated databases.
+
+### Customer base
+You can store as much customers as you want, with all informations needed. If your customer has a contract with a expiration date you can store it too, and when the time is coming the app will notify you about it.
+
+### Product base
+You can store the products you sell and their prices.
+
+### Sales register
+You can register your sales, and if necessary, link it directly to one of the customers and one of the previously registered products.
+
+### Record of receipts
+You can record all receipts that you have to receive in the future and mark them as received when you are paid.
+
+### Cashier
+Every time you mark an amount as paid or received, that amount is added to or removed from the cashier. You can also click on the cashier and add or remove values ​​manually.
+
+### Graphs
+The program generates a series of graphs about your company's current, past and future situation. For example:
+
+* Customer contract expiration graph
+* Revenue graph
+* Debt graph
+* Comparative graph between income and debt
+
+All charts can be viewed annually or month by month.
 
 ## Built With
 * [Javascript](https://www.javascript.com/)
